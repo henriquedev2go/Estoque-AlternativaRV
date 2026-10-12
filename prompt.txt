@@ -1,0 +1,90 @@
+# Redesign da página de login — Alternativa Estoque
+
+Quero redesenhar exclusivamente a página de login do meu sistema **Alternativa Estoque**, utilizando como referência visual e de experiência do usuário a página:
+
+https://app.abacatepay.com/login?returnTo=%2F
+
+## Objetivo
+
+Criar uma tela de login moderna, minimalista, elegante e profissional, inspirada na simplicidade visual da AbacatePay e no acabamento de interfaces SaaS como Stripe e Linear.
+
+### 1. Analise a referência
+
+Acesse a página de referência e, se possível, examine sua aparência visual, hierarquia, espaçamentos, tipografia, campos de formulário, botões e comportamento responsivo.
+
+Não se limite à descrição textual da página. Analise o layout real quando houver acesso visual disponível. Se não conseguir visualizar a página diretamente, não invente detalhes: utilize as características conhecidas de uma interface minimalista como direção de design.
+
+### 2. Direção visual
+
+* Layout limpo, com bastante espaço em branco e hierarquia visual clara.
+* Formulário de autenticação com posicionamento equilibrado e dimensões bem definidas.
+* Tipografia moderna, legível e consistente.
+* Campos de entrada refinados, com bordas discretas e estados de foco elegantes.
+* Botão principal destacado, com feedback visual ao passar o mouse, pressionar e carregar.
+* Cantos arredondados moderados e sombras sutis, evitando excesso de elementos decorativos.
+* Identidade visual própria da Alternativa Estoque, preservando seu logotipo e suas cores institucionais.
+* Acabamento visual premium, sem imitar literalmente a marca AbacatePay.
+
+### 3. Estrutura da tela
+
+Crie uma experiência de login que contenha, conforme compatível com a autenticação atual:
+
+* Logotipo da Alternativa.
+* Título objetivo, como "Bem-vindo de volta".
+* Texto auxiliar curto explicando o acesso ao sistema.
+* Campo de e-mail ou usuário, conforme o método já implementado.
+* Campo de senha, caso utilizado atualmente, com opção de mostrar ou ocultar a senha.
+* Botão principal para entrar.
+* Link para recuperação de senha, se já existir essa funcionalidade.
+* Mensagens de erro e validação claras.
+* Indicador de carregamento durante a autenticação.
+* Identificação discreta do sistema Alternativa Estoque.
+
+Não implemente autenticação por código enviado por e-mail, Google OAuth ou qualquer método novo apenas porque a referência utiliza esse fluxo. Preserve o método de autenticação real do projeto.
+
+### 4. Microinterações e animações
+
+Adicione animações discretas e fluidas:
+
+* Entrada inicial do formulário com fade-in e deslocamento vertical mínimo.
+* Foco dos campos com transição suave de borda e destaque visual.
+* Botão com hover e feedback de clique rápidos.
+* Transição suave entre os estados de carregamento, sucesso e erro.
+* Mensagens de validação que apareçam sem provocar saltos excessivos no layout.
+* Respeito à preferência `prefers-reduced-motion`.
+
+As animações devem transmitir qualidade, não atrasar o login.
+
+### 5. Responsividade
+
+A página deve funcionar perfeitamente em desktop, tablet e celular.
+
+Em telas pequenas, mantenha margens confortáveis, campos fáceis de preencher e um botão principal com área de toque adequada. Evite rolagem desnecessária e garanta compatibilidade com o teclado virtual.
+
+### 6. Requisitos técnicos
+
+Antes de implementar:
+
+* Identifique o componente e a rota atuais de login.
+* Verifique os estilos e componentes reutilizáveis do projeto.
+* Preserve a integração com o backend, a autenticação, as sessões, as permissões e os redirecionamentos.
+* Reutilize os componentes e as dependências existentes sempre que possível.
+
+Implemente o redesign diretamente nos arquivos corretos. Não crie uma página de demonstração desconectada do sistema real.
+
+### 7. Escopo
+
+Modifique somente a experiência visual e as interações da página de login e os componentes estritamente necessários para isso.
+
+Não altere o dashboard, a sidebar, as telas de estoque ou outras páginas nesta tarefa.
+
+### 8. Validação final
+
+* Teste o login real.
+* Verifique os estados de erro, carregamento e recuperação de senha, quando aplicáveis.
+* Confirme que os redirecionamentos continuam funcionando.
+* Verifique a responsividade.
+* Execute os testes e o build disponíveis.
+* Corrija regressões antes de concluir.
+
+**Resultado esperado:** uma página de login com a simplicidade e a elegância da referência, identidade própria da Alternativa Estoque, animações suaves e funcionamento integral com a autenticação existente.
